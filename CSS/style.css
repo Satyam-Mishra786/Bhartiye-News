@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 150vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 10px;
+    padding: 20px 50px;
+    color: white;
+
+}
+
+h1 {
+    color: #6A67CE;
+}
+
+.leftNav {
+    display: flex;
+    align-items: center;
+}
+
+.magicNote {
+    margin-right: 30px;
+}
+
+.rightNav {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    padding: 5px;
+}
+
+.searchInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.searchInputenter {
+    padding: 3px;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.searchIcon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    /* filter: invert(100%); */
+}
+
+main {
+    max-width: 70%;
+    margin: auto;
+}
+
+.BhartiyeNewsHead h3 span {
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+.BhartiyeNewsHead h3 {
+    margin: 5px;
+}
+
+.BhartiyeNewsHead h3 span {
+    background-color: #b2ef96;
+    padding: 2px 5px;
+}
+
+.accordion {
+    width: 100%;
+    margin: 100px auto 0 auto;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+
+
+.label {
+    background-color: #187498;
+    color: rgb(215 251 255);
+    ;
+    padding: 5px 20px;
+    position: relative;
+}
+
+.label p {
+    cursor: pointer;
+}
+
+/* .label p:hover {
+    text-decoration: underline;
+} */
+
+.label::before {
+    content: '+';
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.content {
+    transition: 1s cubic-bezier(0.68, 0, 0.27, 0.99);
+    height: 0;
+    overflow: hidden;
+}
+
+.item.active .content {
+    height: fit-content;
+    padding: 20px;
+}
+
+footer {
+    height: 40px;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    background-color: lightgrey;
+    display: flex;
+    height: 20px;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer span {
+    background-color: #848a7c;
+    padding: 3px;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+@media screen and (max-width:480px) {
+
+    .navbar {
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        background-color: rgb(23, 22, 22);
+    }
+
+    .leftNav {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .leftNav div {
+        display: none;
+    }
+
+    .rightNav {
+        display: none;
+    }
+
+    main {
+        max-width: 95%;
+    }
+
+    .accordion {
+        margin: 30px auto 0 auto;
+    }
+
+    footer {
+        width: 95%;
+        margin: auto;
+    }
+
+}
